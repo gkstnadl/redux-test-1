@@ -10,10 +10,12 @@ function App() {
 
   const handleAdd = () => {
     dispatch(add(Number(inputValue)));
+    setInputValue(0);
   };
 
   const handleSub = () => {
     dispatch(sub(Number(inputValue)));
+    setInputValue(0);
   };
 
   return (
